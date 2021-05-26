@@ -3,13 +3,13 @@
 namespace QT\OrderStatusApi\Model\Data;
 
 use Magento\Framework\DataObject;
-use QT\OrderStatusApi\Api\Data\OrderStatusInterface;
+use QT\OrderStatusApi\Api\Data\OrderStatusRequestInterface;
 
 /**
  * Class OrderStatus
  * @package QT\OrderStatusApi\Model\Data
  */
-class OrderStatus extends DataObject implements OrderStatusInterface
+class OrderStatusRequest extends DataObject implements OrderStatusRequestInterface
 {
     /**
      * @inheritDoc

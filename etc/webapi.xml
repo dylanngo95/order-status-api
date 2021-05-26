@@ -7,4 +7,16 @@
             <resource ref="Magento_Sales::sales"/>
         </resources>
     </route>
+    <route url="/V1/orders/status" method="GET">
+        <service class="QT\OrderStatusApi\Api\OrderStatusServiceInterface" method="getList"/>
+        <resources>
+            <resource ref="Magento_Sales::sales"/>
+        </resources>
+    </route>
+    <route url="/V1/orders/state" method="GET">
+        <service class="QT\OrderStatusApi\Api\OrderStatusServiceInterface" method="getStateList"/>
+        <resources>
+            <resource ref="Magento_Sales::sales"/>
+        </resources>
+    </route>
 </routes>

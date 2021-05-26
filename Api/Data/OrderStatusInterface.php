@@ -2,34 +2,13 @@
 
 namespace QT\OrderStatusApi\Api\Data;
 
-/**
- * Interface OrderStatusInterface
- * @package QT\OrderStatusApi\Api\Data
- */
 interface OrderStatusInterface
 {
     /**
      * String constants for property names
      */
-    const ORDER_ID = "order_id";
     const STATUS = "status";
-    const STATE = "state";
-
-    /**
-     * Getter for OrderId.
-     *
-     * @return int|null
-     */
-    public function getOrderId(): ?int;
-
-    /**
-     * Setter for OrderId.
-     *
-     * @param int|null $orderId
-     *
-     * @return void
-     */
-    public function setOrderId(?int $orderId): void;
+    const LABEL = "label";
 
     /**
      * Getter for Status.
@@ -48,18 +27,18 @@ interface OrderStatusInterface
     public function setStatus(?string $status): void;
 
     /**
-     * Getter for State.
+     * Getter for Label.
      *
      * @return string|null
      */
-    public function getState(): ?string;
+    public function getLabel(): ?string;
 
     /**
-     * Setter for State.
+     * Setter for Label.
      *
-     * @param string|null $state
+     * @param string|null $label
      *
      * @return void
      */
-    public function setState(?string $state): void;
+    public function setLabel(?string $label): void;
 }
